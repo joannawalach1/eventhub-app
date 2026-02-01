@@ -38,5 +38,5 @@ Thumbs.db
 **/db_data/
 **/.env
 docker-compose.override.yml
-/eventHub-backend/.gitignore
+/eventhub-backend/.gitignore
 /eventhub-frontend/src/assets/.gitkeep
