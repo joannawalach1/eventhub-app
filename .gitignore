@@ -1,0 +1,42 @@
+# =================================================================
+# GŁÓWNY .GITIGNORE DLA EVENTHUB (BACKEND + FRONTEND)
+# =================================================================
+
+# --- NARZĘDZIA I SYSTEM ---
+.idea/
+.vscode/
+*.iml
+*.swp
+.DS_Store
+Thumbs.db
+
+# --- BACKEND (Spring Boot / Java / Maven) ---
+**/target/
+**/*.class
+**/mvnw
+**/mvnw.cmd
+**/.mvn/
+# Logi aplikacji
+/*.log
+**/logs/
+
+# --- FRONTEND (Angular / Node.js) ---
+# To usuwa Twoje 1281 plików!
+**/node_modules/
+**/dist/
+**/.angular/
+**/.cache/
+**/npm-debug.log*
+**/yarn-error.log*
+**/.editorconfig
+# Jeśli używasz środowisk lokalnych
+**/src/environments/environment.development.ts
+
+# --- INFRASTRUKTURA I BAZA DANYCH ---
+# Dane z kontenerów Dockera (nie chcemy ich w repo)
+**/postgres_data/
+**/db_data/
+**/.env
+docker-compose.override.yml
+/eventHub-backend/.gitignore
+/eventhub-frontend/src/assets/.gitkeep
